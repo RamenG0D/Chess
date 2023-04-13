@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Utils;
 //
 public interface ChessPiece {
@@ -11,3 +12,13 @@ public interface ChessPiece {
     public int getY();
     //
 }
+=======
+package Utils;
+//
+public interface ChessPiece {
+    //
+    public int getId();
+    public int getColor();
+    //
+}
+>>>>>>> cdd2b77 (Large update)
