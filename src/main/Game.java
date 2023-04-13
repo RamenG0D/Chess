@@ -3,6 +3,11 @@ import Utils.Panel;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import Utils.Frame;
+import Utils.Panel;
+
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class Game {
     public static final int height = 550;
