@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-package Pieces;
-
-public class Pawn  {
-    //
-    public Pawn(int row, int col, int id) {
-
-    }
-    //
-}
-=======
 package Pieces;
 
 import java.awt.Image;
@@ -35,4 +24,3 @@ public class Pawn extends Piece { // pawn Id is 0
     }
     //
 }
->>>>>>> cdd2b77 (Large update)

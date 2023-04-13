@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-import javax.swing.JPanel;
-
-import Utils.Frame;
-import Utils.Panel;
-
-public class Game {
-    public static final int width = 800;
-    public static final int height = 600;
-    private Frame frame;
-    //
-    public Game() {
-        Panel panel = new Panel();
-        //
-        frame = new Frame("Chess", width, height);
-        frame.add(panel);
-        //
-    }
-    //
-    public static void main(String[] args) {
-        //
-        new Game();
-        //
-    }
-    //
-=======
 import Utils.Frame;
 import Utils.Panel;
 
@@ -45,7 +19,7 @@ public class Game {
         panel.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                try { panel.HighlightSpaces(panel.getGraphics(), e.getX(), e.getY()); } 
+                try { panel.HighlightSpaces(panel.getGraphics(), e.getX(), e.getY()); }
                 catch (Exception e1) { e1.printStackTrace(); }
             }
             @Override
@@ -69,5 +43,4 @@ public class Game {
         //
     }
     //
->>>>>>> cdd2b77 (Large update)
 }
