@@ -3,15 +3,11 @@ import Utils.Panel;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import Utils.Frame;
-import Utils.Panel;
-
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 public class Game {
     public static final int height = 550;
     public static final int width = 528;
+    private int LastClickX, LastClickY;
     private Panel panel;
     private Frame frame;
     //
@@ -24,8 +20,11 @@ public class Game {
         panel.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                try { panel.HighlightSpaces(panel.getGraphics(), e.getX(), e.getY()); }
-                catch (Exception e1) { e1.printStackTrace(); }
+                int x, y; x = e.getX() / 64; y = e.getY() / 64;
+                if(panel.isPieceHere(x, y)) panel.HighlightSpaces(panel.getGraphics(), x, y);
+                else panel.paintImmediately(panel.getBounds());
+                panel.movePiece(LastClickX, LastClickY, x, y);
+                LastClickX = x; LastClickY = y;
             }
             @Override
             public void mouseEntered(MouseEvent e) {

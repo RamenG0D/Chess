@@ -1,0 +1,15 @@
+Pieces\Pawn.class
+Utils\Frame.class
+Pieces\Bishop.class
+Utils\ChessPiece.class
+Pieces\King.class
+Utils\BoardGen.class
+Utils\Board.class
+Utils\Piece.class
+Pieces\Queen.class
+Utils\Panel.class
+Utils\ImageLoader.class
+Game$1.class
+Pieces\Rook.class
+Game.class
+Pieces\Knight.class
